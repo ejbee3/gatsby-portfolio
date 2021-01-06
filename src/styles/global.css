@@ -1,5 +1,5 @@
 html {
-  background-color: #c7aeae;
+  background-color: #cfebf7;
 }
 
 .leaf-border {
@@ -69,6 +69,11 @@ h2 {
   justify-content: space-around;
 }
 
+.welcome {
+  margin: auto 0;
+  text-align: center;
+}
+
 .welcome:hover {
   text-decoration: underline;
   text-decoration-style: dotted;
@@ -91,3 +96,8 @@ figcaption:hover {
   text-decoration: underline;
   text-decoration-style: double;
 }
+
+/* nav {
+  background-color: #cfebf7;
+  color: #733635;
+} */

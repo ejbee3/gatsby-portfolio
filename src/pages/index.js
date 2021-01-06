@@ -8,16 +8,20 @@ import csharpImage from "../images/csharp.png"
 import sqlImage from "../images/sql.png"
 import dotNetImage from "../images/netCore.png"
 import plusImage from "../images/plus.png"
+import logo from "../images/portfolio-logo.png"
 
 export default function Home() {
 
   return (
     <div>
+      <nav>
+        <img src={logo} alt="anonymous function with my initials JB"/>
+      </nav>
     <header>
       <section>
-      <h1 className="welcome" style={{margin: "auto 0", textAlign: "center"}}>Hi, I'm Joe!</h1>
-      <p style={{fontStyle: "italic", padding: 0.5 + "rem"}}>
-        I'm a junior dev from the Tampa Area. 
+      <h1 className="welcome">Joe Baranski,</h1>
+      <h1 className="welcome">Junior Fullstack Developer</h1>
+      <p style={{fontStyle: "italic", padding: "0.5rem 0.5rem 0.5rem 1.2rem"}}>
         My first programming experience was in middle school when
         I learned how to ping my away message on AIM without the help of a friend.
       </p>
