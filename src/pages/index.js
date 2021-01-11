@@ -33,7 +33,7 @@ export default function Home() {
       
     </header>
     <main>
-        <h2 style={{marginTop: 2 + "rem", marginBottom: 1 + "rem"}}>SKILLS:</h2>
+        <h2 style={{marginTop: 2 + "rem", marginBottom: 1 + "rem", textDecoration: "underline"}}>SKILLS:</h2>
       <section className="skills">
         <div className="logo-block">
           <h3>frontend</h3>
@@ -56,7 +56,7 @@ export default function Home() {
           </article>
         </div>
       </section>
-      <h2>PROJECTS:</h2>
+      <h2 style={{textDecoration: "underline"}}>PROJECTS:</h2>
     </main>
     </div>
   )}
