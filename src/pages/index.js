@@ -10,6 +10,8 @@ import dotNetImage from "../images/netCore.png"
 import plusImage from "../images/plus.png"
 import logo from "../images/portfolio-logo.png"
 
+import { Link } from "gatsby"
+
 export default function Home() {
 
   return (
@@ -57,6 +59,22 @@ export default function Home() {
         </div>
       </section>
       <h2 style={{textDecoration: "underline"}}>PROJECTS:</h2>
+      <section className="projects">
+        <div>
+          <Link to="/projects/my-discord-bot">Discord bot</Link>
+        </div>
+        <div>
+        <Link to="/projects/py-man">Python hangman</Link>
+          </div>
+        <div>
+          <Link to="/projects/react-website">React website</Link>
+          </div>
+        <div>
+          <Link to="/projects/php">PHP class generator</Link>
+          </div>
+        
+      </section>
     </main>
     </div>
   )}
+
