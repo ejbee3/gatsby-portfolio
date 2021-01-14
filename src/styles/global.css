@@ -1,9 +1,17 @@
 html {
+  margin: 0;
   background-color: #cfebf7;
+  font-family: "Raleway";
 }
 
-body {
-  font-family: "Raleway";
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 .leaf-border {
@@ -89,6 +97,7 @@ figure {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin-top: 2.8rem;
 }
 
 figcaption {
@@ -113,4 +122,59 @@ figcaption:hover {
   height: 20%;
   width: 40%;
   margin: 2rem 0 2rem 6rem;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(207, 235, 247, 0.6);
+  align-items: center;
+}
+
+nav > a {
+  text-decoration: none;
+}
+
+nav > a:hover {
+  text-decoration: underline;
+  color: #2a3439;
+}
+
+.logo-icon {
+  margin-top: 0.3rem;
+  margin-left: 0.3rem;
+}
+.logo-icon:hover {
+  background-color: #2a3439;
+}
+
+.logo-btn {
+  all: unset;
+}
+
+footer {
+  text-align: center;
+  color: #c0c0c0;
+  background-color: #2a3439;
+  border-top: 5px solid black;
+  padding: 0.7rem;
+  width: auto;
+}
+
+footer > button {
+  color: #2a3439;
+  background-color: #c0c0c0;
+  border: 2px solid black;
+  border-radius: 20%;
+}
+
+footer > button:hover {
+  color: #c0c0c0;
+  background-color: black;
+  border: 2px solid #c0c0c0;
+  border-radius: 20%;
 }

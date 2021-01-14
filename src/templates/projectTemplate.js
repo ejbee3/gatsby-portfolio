@@ -11,10 +11,13 @@ export default function Template({
       <nav>
         <Link to="/">Back to Home</Link>
       </nav>
-      <div className="blog-post">
-        <h1>{frontmatter.title} - <span>{frontmatter.date}</span></h1>
+      <div style={{paddingLeft: 1 + "rem"}}>
+        <h1>
+          {frontmatter.title} -  <span style={{fontSize: 1.4 + "rem", fontStyle: "italic"}}> {frontmatter.date}
+          </span>
+        </h1>
         <div
-          className="blog-post-content"
+          
           dangerouslySetInnerHTML={{ __html: html }}
         />
         

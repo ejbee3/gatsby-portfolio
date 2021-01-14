@@ -1,7 +1,7 @@
 ## TODO's:
 
-1. Get project pictures for clickables
-2. Hookup md pages to home page
-3. Add an email contact on the bottom
-4. Add links to Github, LinkedIn, and Twitter
-5. Add context to picture
+1. Add context to picture (maybe make a separate markdown page?)
+2. Get a static server hosting my website (likely Netlify)
+3. Hook domain name up to the site
+
+domain name: codejoecode.com
