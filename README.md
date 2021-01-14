@@ -1,7 +1,6 @@
 ## TODO's:
 
-1. Add context to picture (maybe make a separate markdown page?)
-2. Get a static server hosting my website (likely Netlify)
-3. Hook domain name up to the site
-
-domain name: codejoecode.com
+1. Get project pictures for clickables
+2. Add an email contact on the bottom
+3. Add links to Github, LinkedIn, and Twitter
+4. Add context to picture
