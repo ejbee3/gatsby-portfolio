@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import SEO from "../components/seo"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -8,6 +9,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <div className="blog-post-container">
+      <SEO title={frontmatter.title} description={frontmatter.excerpt} />
       <nav>
         <Link style={{padding: 0.5 + "rem"}} to="/">Back to Home</Link>
       </nav>
@@ -35,6 +37,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM, YYYY")
         title
       }
+      excerpt
     }
   }
 `
