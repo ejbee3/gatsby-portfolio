@@ -8,10 +8,10 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="blog-post-container">
+    <div className="project-container">
       <SEO title={frontmatter.title} description={frontmatter.excerpt} />
       <nav>
-        <Link style={{padding: 0.5 + "rem"}} to="/">Back to Home</Link>
+        <Link style={{padding: 0.5 + "rem", fontSize: "1.2rem"}} to="/">Back to Home</Link>
       </nav>
       <div style={{paddingLeft: 1 + "rem", marginTop: 2.5 + "rem"}}>
         <h1>
@@ -19,7 +19,7 @@ export default function Template({
           </span>
         </h1>
         <div
-          
+          className="project-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
         

@@ -9,7 +9,7 @@ import csharpImage from "../images/csharp.png"
 import sqlImage from "../images/sql.png"
 import dotNetImage from "../images/netCore.png"
 import plusImage from "../images/plus.png"
-import logo from "../images/icon.png"
+import logo from "../images/logo.png"
 import discord from "../images/discord.png"
 import pylogo from "../images/pylogo.png"
 import php from "../images/php-logo.png"
@@ -69,7 +69,7 @@ export default function Home() {
       <section>
       <h1 className="welcome">Joe Baranski,</h1>
       <h1 className="welcome">Junior Fullstack Developer</h1>
-      <p style={{fontStyle: "italic", padding: "0.5rem 0.5rem 0.5rem 1.2rem"}}>
+      <p style={{fontStyle: "italic", padding: "0.5rem 0.5rem 0.5rem 3rem", fontSize: 1.2 + "rem"}}>
         My first programming experience was in middle school when
         I learned how to ping my away message on AIM without the help of a friend.
       </p>
@@ -84,7 +84,7 @@ export default function Home() {
       
     </header>
     <main>
-        <h2 style={{marginTop: 2 + "rem", marginBottom: 1 + "rem", textDecoration: "underline"}}>SKILLS:</h2>
+        <h2 style={{marginTop: 2 + "rem", marginBottom: 1 + "rem", textDecoration: "underline", fontSize: "1.8rem"}}>SKILLS:</h2>
       <section className="skills">
         <div className="logo-block">
           <h3>frontend</h3>
@@ -107,7 +107,7 @@ export default function Home() {
           </article>
         </div>
       </section>
-      <h2 style={{textDecoration: "underline"}}>PROJECTS:</h2>
+      <h2 style={{textDecoration: "underline", fontSize: "1.8rem"}}>PROJECTS:</h2>
       <section className="projects">
         <div>
           <Link to="/projects/my-discord-bot" 
@@ -141,7 +141,7 @@ export default function Home() {
         
       </section>
     </main>
-    <footer>
+    <footer style={{fontSize: "1.2rem"}}>
     © Joe Baranski, 2021 -- email: joe.baranski49@gmail.com <button onClick={copyEmail}>Copy?</button> {copySuccess}
     </footer>
     </div>

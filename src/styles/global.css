@@ -57,6 +57,10 @@ h2 {
   color: #c0c0c0;
 }
 
+.logo-block > h3 {
+  font-size: 1.4rem;
+}
+
 .logo-block > article {
   display: flex;
   align-items: center;
@@ -84,6 +88,7 @@ h2 {
 .welcome {
   margin: auto 0;
   text-align: center;
+  font-size: 2rem;
 }
 
 .welcome:hover {
@@ -105,6 +110,7 @@ figcaption {
   font-size: medium;
   font-style: italic;
   color: black;
+  font-size: 1.1rem;
 }
 
 figcaption:hover {
@@ -121,7 +127,7 @@ figcaption:hover {
 }
 
 .projects > div {
-  margin: 2rem 0 2rem 4rem;
+  margin: 2rem 4rem 2rem 4rem;
 }
 
 nav {
@@ -137,6 +143,7 @@ nav {
 
 nav > a {
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
 nav > a:hover {
@@ -147,6 +154,8 @@ nav > a:hover {
 .logo-icon {
   margin-top: 0.3rem;
   margin-left: 0.3rem;
+  height: 2.4rem;
+  width: 2.4rem;
 }
 .logo-icon:hover {
   background-color: #2a3439;
@@ -161,7 +170,7 @@ footer {
   color: #c0c0c0;
   background-color: #2a3439;
   border-top: 5px solid black;
-  padding: 0.7rem;
+  padding: 1rem;
   width: auto;
 }
 
@@ -169,12 +178,16 @@ footer > button {
   color: #2a3439;
   background-color: #c0c0c0;
   border: 2px solid black;
-  border-radius: 20%;
+  border-radius: 15%;
 }
 
 footer > button:hover {
   color: #c0c0c0;
   background-color: black;
   border: 2px solid #c0c0c0;
-  border-radius: 20%;
+  border-radius: 15%;
+}
+
+.project-content {
+  font-size: 1.2rem;
 }
