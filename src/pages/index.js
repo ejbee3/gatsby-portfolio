@@ -76,7 +76,10 @@ export default function Home() {
       </section>
       <figure>
       <img className="leaf-border" src={headerImage} alt="me climbing a palm tree on a beach" />
-      <figcaption>Context?</figcaption>
+      <Link style={{textDecoration: "none"}} to="/scuba-trip">
+        <figcaption>Context?</figcaption>
+      </Link>
+      
       </figure>
       
     </header>

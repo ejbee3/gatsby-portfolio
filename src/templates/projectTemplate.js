@@ -9,9 +9,9 @@ export default function Template({
   return (
     <div className="blog-post-container">
       <nav>
-        <Link to="/">Back to Home</Link>
+        <Link style={{padding: 0.5 + "rem"}} to="/">Back to Home</Link>
       </nav>
-      <div style={{paddingLeft: 1 + "rem"}}>
+      <div style={{paddingLeft: 1 + "rem", marginTop: 2.5 + "rem"}}>
         <h1>
           {frontmatter.title} -  <span style={{fontSize: 1.4 + "rem", fontStyle: "italic"}}> {frontmatter.date}
           </span>

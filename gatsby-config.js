@@ -28,7 +28,7 @@ module.exports = {
             options: {
               maxWidth: 800,
             },
-          },
+          }
         ],
       },
     },
