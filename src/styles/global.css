@@ -1,17 +1,20 @@
 html {
-  margin: 0;
   background-color: #cfebf7;
   font-family: "Raleway";
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .main-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
+  position: relative;
 }
 
 .leaf-border {
@@ -119,21 +122,19 @@ figcaption:hover {
 }
 
 .projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
 
 .projects > div {
-  margin: 2rem 4rem 2rem 4rem;
+  margin: 1.5rem 0 1.5rem 0;
 }
 
 nav {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -152,8 +153,8 @@ nav > a:hover {
 }
 
 .logo-icon {
-  margin-top: 0.3rem;
-  margin-left: 0.3rem;
+  padding-top: 0.3rem;
+  padding-left: 0.3rem;
   height: 2.4rem;
   width: 2.4rem;
 }
@@ -171,7 +172,15 @@ footer {
   background-color: #2a3439;
   border-top: 5px solid black;
   padding: 1rem;
-  width: auto;
+  position: absolute;
+  margin: 0;
+  font-size: 1.2rem;
+  min-width: 100%;
+}
+
+main {
+  margin: 0;
+  padding-bottom: 2.5rem;
 }
 
 footer > button {
@@ -190,4 +199,52 @@ footer > button:hover {
 
 .project-content {
   font-size: 1.2rem;
+}
+
+header > section > p {
+  font-size: italic;
+  padding: 0.5rem 0.5rem 0.5rem 3rem;
+  font-size: 1.2rem;
+}
+
+/* for mobile */
+
+@media only screen and (max-width: 400px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills {
+    flex-wrap: wrap;
+  }
+
+  .skills > div > img {
+    padding-bottom: 1.2rem;
+  }
+
+  .leaf-border {
+    width: 18rem;
+    height: 9rem;
+  }
+
+  header {
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+
+  header > section > p {
+    margin-right: 0.8rem;
+    margin-left: 0;
+  }
+
+  nav > a {
+    justify-self: center;
+  }
+
+  .logo-btn {
+    cursor: pointer;
+  }
 }

@@ -31,8 +31,8 @@ export default function Home() {
     setHover(newHover)
   }
 
-  console.log("Wow, you inspected the element, are you some sort of leet h4ck3r person?")
-  console.log("Send me tweets about how awful my website looks on your device, please 😎")
+  // console.log("Wow, you inspected the element, are you some sort of leet h4ck3r person?")
+  // console.log("Send me tweets about how awful my website looks on your device, please 😎")
 
   function copyEmail() {
     navigator.permissions.query({name:"clipboard-write"}).then(function(result) {
@@ -69,7 +69,7 @@ export default function Home() {
       <section>
       <h1 className="welcome">Joe Baranski,</h1>
       <h1 className="welcome">Junior Fullstack Developer</h1>
-      <p style={{fontStyle: "italic", padding: "0.5rem 0.5rem 0.5rem 3rem", fontSize: 1.2 + "rem"}}>
+      <p>
         My first programming experience was in middle school when
         I learned how to ping my away message on AIM without the help of a friend.
       </p>
@@ -136,13 +136,13 @@ export default function Home() {
           <Link to="/projects/php" style={hover[3] ? {backgroundColor: "#2a3439"} : {backgroundColor : "#cfebf7"}}
                 onMouseEnter={() => toggleHover(3)}
                 onMouseLeave={() => toggleHover(3)}>
-            <img src={php} alt="black and blue php logo"></img></Link>
+            <img src={php} alt="black and blue php logo" style={{paddingTop: "1.6rem"}}></img></Link>
           </div>
         
       </section>
     </main>
-    <footer style={{fontSize: "1.2rem"}}>
-    © Joe Baranski, 2021 -- email: joe.baranski49@gmail.com <button onClick={copyEmail}>Copy?</button> {copySuccess}
+    <footer>
+    © Joe Baranski, 2021 -- joe.baranski49(at)gmail.com <button onClick={copyEmail}>Copy?</button> {copySuccess}
     </footer>
     </div>
   )}
