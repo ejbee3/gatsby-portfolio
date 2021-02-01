@@ -49,7 +49,7 @@ export default function Home() {
       <div className="main-container">
       <nav>
         <button className="logo-btn"
-        onClick={() => window.scrollTo(0,0)}
+        onClick={() => document.body.scrollTop = 0}
         onKeyDown={(e) => {
           if (e.key === "Enter" || e.key === '') {
             window.scrollTo(0,0)
@@ -61,9 +61,9 @@ export default function Home() {
          />
         </button>
         
-        <a href="https://github.com/ejbee3" target="_blank" rel="noopener noreferrer">Github</a>
-        <a href="https://www.linkedin.com/in/joe-baranski/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://twitter.com/ejbee3" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a className="socials" href="https://github.com/ejbee3" target="_blank" rel="noopener noreferrer">Github</a>
+        <a className="socials" href="https://www.linkedin.com/in/joe-baranski/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a className="socials" href="https://twitter.com/ejbee3" target="_blank" rel="noopener noreferrer">Twitter</a>
       </nav>
     <header>
       <section>
