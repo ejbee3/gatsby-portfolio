@@ -71,7 +71,10 @@ export default function Home() {
       <h1 className="welcome">Junior Fullstack Developer</h1>
       <p>
         My first programming experience was in middle school when
-        I learned how to ping my away message on AIM without the help of a friend.
+        I learned how to ping my away message on AIM <span>without</span> the help of a friend.
+      </p>
+      <p className="desktop-about">Later in high school, I learned HTML by accident when I wanted my MySpace page to look like
+        the <span>Cat's Pajamas.</span>
       </p>
       </section>
       <figure>

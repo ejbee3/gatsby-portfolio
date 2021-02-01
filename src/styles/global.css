@@ -208,6 +208,10 @@ header > section > p {
   font-size: 1.2rem;
 }
 
+span {
+  font-weight: 700;
+}
+
 /* for mobile */
 
 @media only screen and (max-width: 400px) {
@@ -257,5 +261,13 @@ header > section > p {
 
   .logo-icon {
     content: url("../images/mobile-logo.png");
+  }
+
+  .desktop-about {
+    display: none;
+  }
+
+  footer > button {
+    display: none;
   }
 }
