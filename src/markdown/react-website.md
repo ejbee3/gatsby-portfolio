@@ -18,7 +18,11 @@ Some features that I'm proud of:
 
 ![cart total](../images/react-cart.png)
 
-I know it's pretty barebones, but I have trouble fleshing out React apps much more than this, as I either get
-too deep into website design, or see how I can implement a backend for the SPA, without a visualized end goal.
+Next Steps for this app would be:
+
+- Hooking the products up to a database to log inventory
+- Sign in portal for users to save their carts and see order history
+- General design updates to reduce whitespace
+- UI testing by gathering feedback from users
 
 ![faq page](../images/react-faq.png)

@@ -67,14 +67,14 @@ export default function Home() {
       </nav>
     <header>
       <section>
-      <h1 className="welcome">Joe Baranski,</h1>
-      <h1 className="welcome">Junior Fullstack Developer</h1>
+      <h1 className="welcome">joe baranski,</h1>
+      <h1 className="welcome">javascript developer</h1>
       <p>
-        My first programming experience was in middle school when
-        I learned how to ping my away message on AIM <span>without</span> the help of a friend.
+        I am a <span>polyglot</span> programmer who specializes in Javascript and React.js. My main objective is creating <span>clean, reusable, unit-tested </span>
+         code that makes a quantifiable difference in our lives. 
       </p>
-      <p className="desktop-about">Later in high school, I learned HTML by accident when I wanted my MySpace page to look like
-        the <span>Cat's Pajamas.</span>
+      <p className="desktop-about">I am <span>constantly</span> pushing myself to learn new technologies and to discuss best coding practices
+      with other developers. Let's make something <span>incredible</span> together.
       </p>
       </section>
       <figure>
